@@ -149,15 +149,14 @@ books.forEach((book) => {
     hist.push(book);
   }
 });
-
-//how to use map to only show certain properties/add properties
 console.log(hist);
+//how to use map to only show certain properties/add properties
+
 const hist2 = books.map((book, index) => ({
   name: book.name,
   price: 100,
   id: index + 1,
 }));
-
 console.log(hist2);
 
 //filter
